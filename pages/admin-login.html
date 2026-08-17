@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FixFlow | Admin Login</title>
+
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <!-- Admin CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/admin.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="admin-login-page">
+
+        <div class="admin-login-card">
+
+
+            <!-- ICON -->
+
+            <div class="admin-login-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Admin <span>Login</span>
+            </h1>
+
+
+            <p>
+                Sign in to manage FixFlow repair requests.
+            </p>
+
+
+            <!-- LOGIN FORM -->
+
+            <form id="adminLoginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="login-form-group">
+
+                    <label for="adminEmail">
+                        Email Address
+                    </label>
+
+                    <div class="login-input">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="adminEmail"
+                            placeholder="admin@fixflow.com"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="login-form-group">
+
+                    <label for="adminPassword">
+                        Password
+                    </label>
+
+                    <div class="login-input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            placeholder="FixFlow@123"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ERROR -->
+
+                <p
+                    id="loginError"
+                    class="login-error"
+                ></p>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="admin-login-btn"
+                >
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Login to Dashboard
+
+                </button>
+
+
+            </form>
+
+
+            <!-- BACK -->
+
+            <a
+                href="../index.html"
+                class="back-home"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to FixFlow
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- ADMIN LOGIN JAVASCRIPT -->
+
+    <script src="../js/admin-login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,692 @@
+/* ==========================================
+   FIXFLOW BOOKING PAGE
+========================================== */
+
+
+/* ================= HERO ================= */
+
+.booking-hero {
+
+    padding: 75px 0 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eff6ff
+        );
+}
+
+
+.booking-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+
+.booking-heading h1 {
+
+    color: var(--dark);
+
+    font-size: clamp(
+        38px,
+        5vw,
+        55px
+    );
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 15px;
+}
+
+
+.booking-heading h1 span {
+
+    color: var(--primary);
+
+    display: block;
+}
+
+
+.booking-heading p {
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* ================= LAYOUT ================= */
+
+.booking-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 300px;
+
+    gap: 30px;
+
+    align-items: start;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.booking-card {
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(15, 23, 42, 0.08);
+}
+
+
+.form-header {
+
+    padding-bottom: 22px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    margin-bottom: 25px;
+}
+
+
+.form-header h2 {
+
+    color: var(--dark);
+
+    font-size: 20px;
+}
+
+
+.form-header p {
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+
+/* ================= FORM SECTION ================= */
+
+.form-section {
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.form-section:last-of-type {
+
+    border-bottom: none;
+
+    margin-bottom: 0;
+}
+
+
+.form-section h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+.form-section h3 i {
+
+    color: var(--primary);
+
+    font-size: 14px;
+}
+
+
+/* ================= FORM GRID ================= */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 17px;
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group.full {
+
+    grid-column: 1 / -1;
+}
+
+
+.form-group label {
+
+    color: var(--dark);
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 9px;
+
+    padding: 12px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: var(--dark);
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    transition: var(--transition);
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 90px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/* ================= SUBMIT ================= */
+
+.submit-repair-btn {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #3b82f6
+        );
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px
+        rgba(37, 99, 235, 0.2);
+
+    transition: var(--transition);
+}
+
+
+.submit-repair-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(37, 99, 235, 0.28);
+}
+
+
+.form-note {
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    margin-top: 13px;
+}
+
+
+.form-note i {
+
+    color: var(--success);
+
+    margin-right: 4px;
+}
+
+
+/* ================= INFO ================= */
+
+.booking-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    position: sticky;
+
+    top: 100px;
+}
+
+
+.info-card {
+
+    padding: 20px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 14px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.info-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    margin-bottom: 13px;
+}
+
+
+.info-card h3 {
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.info-card p {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= SUCCESS ================= */
+
+.success-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 2000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(15, 23, 42, 0.55);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.success-overlay.show {
+
+    display: flex;
+}
+
+
+.success-modal {
+
+    width: min(
+        100%,
+        430px
+    );
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 30px 80px
+        rgba(15, 23, 42, 0.25);
+
+    animation:
+        modalIn 0.3s ease;
+}
+
+
+@keyframes modalIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(0.96);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+.success-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #ecfdf5;
+
+    color: var(--success);
+
+    font-size: 25px;
+}
+
+
+.success-modal h2 {
+
+    color: var(--dark);
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+.success-modal > p {
+
+    color: var(--text-light);
+
+    font-size: 11px;
+}
+
+
+/* REPAIR ID */
+
+.repair-id-box {
+
+    margin: 22px 0 12px;
+
+    padding: 15px;
+
+    background: #eff6ff;
+
+    border: 1px dashed #93c5fd;
+
+    border-radius: 10px;
+}
+
+
+.repair-id-box span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.repair-id-box strong {
+
+    display: block;
+
+    color: var(--primary);
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+
+    margin-top: 4px;
+}
+
+
+.success-note {
+
+    font-size: 10px !important;
+
+    color: var(--text-light);
+
+    margin-bottom: 20px;
+}
+
+
+/* BUTTONS */
+
+.success-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+}
+
+
+.success-buttons .primary-btn {
+
+    font-size: 11px;
+
+    padding: 11px 17px;
+}
+
+
+.close-btn {
+
+    border: 1px solid var(--border);
+
+    background: white;
+
+    color: var(--dark);
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .booking-layout {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-info {
+
+        position: static;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .booking-hero {
+
+        padding: 55px 0 70px;
+    }
+
+
+    .booking-heading h1 {
+
+        font-size: 38px;
+    }
+
+
+    .booking-card {
+
+        padding: 20px;
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-group.full {
+
+        grid-column: auto;
+    }
+
+
+    .booking-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .success-modal {
+
+        padding: 28px 20px;
+    }
+
+}

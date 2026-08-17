@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Book a Repair | FixFlow</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/booking.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+
+            Fix<span>Flow</span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../index.html#services">
+                Services
+            </a>
+
+            <a href="../index.html#how-it-works">
+                How It Works
+            </a>
+
+            <a href="../index.html#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="track-repair.html"
+                class="login-btn"
+            >
+                Track Repair
+            </a>
+
+        </div>
+
+
+        <button class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= BOOKING HERO ================= -->
+
+<section class="booking-hero">
+
+    <div class="container">
+
+        <div class="booking-heading">
+
+            <span class="section-tag">
+                BOOK A REPAIR
+            </span>
+
+            <h1>
+                Let's get your device
+                <span>back on track.</span>
+            </h1>
+
+            <p>
+                Tell us about your device and the problem.
+                We'll take care of the rest.
+            </p>
+
+        </div>
+
+
+        <!-- ================= BOOKING FORM ================= -->
+
+        <div class="booking-layout">
+
+
+            <!-- FORM -->
+
+            <div class="booking-card">
+
+                <div class="form-header">
+
+                    <h2>
+                        Repair Request
+                    </h2>
+
+                    <p>
+                        Enter your details below
+                    </p>
+
+                </div>
+
+
+                <form id="repairForm">
+
+
+                    <!-- CUSTOMER DETAILS -->
+
+                    <div class="form-section">
+
+                        <h3>
+                            <i class="fa-solid fa-user"></i>
+                            Your Details
+                        </h3>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="10-digit mobile number"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group full">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DEVICE DETAILS -->
+
+                    <div class="form-section">
+
+                        <h3>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            Device Details
+                        </h3>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="deviceType">
+                                    Device Type
+                                </label>
+
+                                <select
+                                    id="deviceType"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select device
+                                    </option>
+
+                                    <option value="Laptop">
+                                        Laptop
+                                    </option>
+
+                                    <option value="Mobile">
+                                        Mobile
+                                    </option>
+
+                                    <option value="Tablet">
+                                        Tablet
+                                    </option>
+
+                                    <option value="TV">
+                                        TV
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="brand">
+                                    Brand
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="brand"
+                                    placeholder="e.g. Dell, Apple, Samsung"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group full">
+
+                                <label for="problem">
+                                    What's wrong with your device?
+                                </label>
+
+                                <textarea
+                                    id="problem"
+                                    rows="4"
+                                    placeholder="Describe the problem..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- APPOINTMENT -->
+
+                    <div class="form-section">
+
+                        <h3>
+                            <i class="fa-regular fa-calendar"></i>
+                            Preferred Appointment
+                        </h3>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="date">
+                                    Preferred Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="time">
+                                    Preferred Time
+                                </label>
+
+                                <select
+                                    id="time"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select time
+                                    </option>
+
+                                    <option>
+                                        10:00 AM - 12:00 PM
+                                    </option>
+
+                                    <option>
+                                        12:00 PM - 02:00 PM
+                                    </option>
+
+                                    <option>
+                                        02:00 PM - 04:00 PM
+                                    </option>
+
+                                    <option>
+                                        04:00 PM - 06:00 PM
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-section">
+
+                        <h3>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Pickup Address
+                        </h3>
+
+
+                        <div class="form-group">
+
+                            <label for="address">
+                                Address
+                            </label>
+
+                            <textarea
+                                id="address"
+                                rows="3"
+                                placeholder="Enter pickup address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="submit-repair-btn"
+                    >
+
+                        <i class="fa-solid fa-wrench"></i>
+
+                        Submit Repair Request
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <p class="form-note">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Your information is secure with FixFlow.
+
+                    </p>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- SIDE INFO -->
+
+            <aside class="booking-info">
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <h3>
+                        Quick Diagnosis
+                    </h3>
+
+                    <p>
+                        Most devices are diagnosed within
+                        24 hours.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    </div>
+
+                    <h3>
+                        Transparent Pricing
+                    </h3>
+
+                    <p>
+                        Get an estimate before repair work
+                        begins.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <h3>
+                        Trusted Service
+                    </h3>
+
+                    <p>
+                        Your device is handled by verified
+                        technicians.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SUCCESS MODAL ================= -->
+
+<div
+    class="success-overlay"
+    id="successOverlay"
+>
+
+    <div class="success-modal">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <h2>
+            Repair Request Created!
+        </h2>
+
+        <p>
+            Your repair request has been successfully
+            submitted.
+        </p>
+
+
+        <div class="repair-id-box">
+
+            <span>
+                YOUR REPAIR ID
+            </span>
+
+            <strong id="generatedRepairId">
+                FF-0000
+            </strong>
+
+        </div>
+
+
+        <p class="success-note">
+
+            Save this Repair ID to track your repair.
+
+        </p>
+
+
+        <div class="success-buttons">
+
+            <a
+                href="track-repair.html"
+                class="primary-btn"
+            >
+                Track Repair
+            </a>
+
+            <button
+                id="closeModal"
+                class="close-btn"
+            >
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 FixFlow. All rights reserved.
+        </p>
+
+        <div class="social-links">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/booking.js"></script>
+
+</body>
+
+</html>

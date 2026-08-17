@@ -1,0 +1,583 @@
+/* ==========================================
+   FIXFLOW DASHBOARD
+========================================== */
+
+.dashboard-page {
+
+    min-height: 80vh;
+
+    padding: 65px 0 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eff6ff
+        );
+}
+
+
+/* ================= HEADER ================= */
+
+.dashboard-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+.dashboard-header h1 {
+
+    font-size: clamp(
+        35px,
+        5vw,
+        50px
+    );
+
+    color: var(--dark);
+
+    letter-spacing: -2px;
+
+    margin: 10px 0;
+}
+
+
+.dashboard-header h1 span {
+
+    color: var(--primary);
+}
+
+
+.dashboard-header p {
+
+    color: var(--text-light);
+
+    font-size: 12px;
+}
+
+
+.dashboard-book-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    background: var(--primary);
+
+    color: white;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 40px;
+}
+
+
+.stat-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.stat-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+}
+
+
+.stat-icon.blue {
+
+    color: var(--primary);
+
+    background: #eff6ff;
+}
+
+
+.stat-icon.orange {
+
+    color: #f97316;
+
+    background: #fff7ed;
+}
+
+
+.stat-icon.green {
+
+    color: #16a34a;
+
+    background: #f0fdf4;
+}
+
+
+.stat-icon.purple {
+
+    color: #9333ea;
+
+    background: #faf5ff;
+}
+
+
+.stat-card span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    margin-bottom: 4px;
+}
+
+
+.stat-card strong {
+
+    color: var(--dark);
+
+    font-size: 22px;
+}
+
+
+/* ================= SECTION ================= */
+
+.dashboard-section {
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 17px;
+}
+
+
+.section-heading h2 {
+
+    color: var(--dark);
+
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+
+.section-heading p {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+.section-heading > a {
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ================= ACTIVE REPAIR ================= */
+
+.active-repair-card {
+
+    display: grid;
+
+    grid-template-columns:
+        auto 1fr auto;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 25px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.repair-device-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 13px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    font-size: 20px;
+}
+
+
+.active-repair-info h3 {
+
+    color: var(--dark);
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+
+.active-repair-info p {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.progress-wrapper {
+
+    max-width: 450px;
+}
+
+
+.progress-label {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 7px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e2e8f0;
+}
+
+
+.progress-fill {
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--primary);
+}
+
+
+.repair-status {
+
+    text-align: right;
+}
+
+
+.status-badge {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    color: #1d4ed8;
+
+    background: #dbeafe;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.repair-status a {
+
+    display: block;
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ================= REPAIRS ================= */
+
+.repairs-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 17px;
+}
+
+
+.repair-card {
+
+    padding: 20px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.repair-card-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: start;
+
+    margin-bottom: 17px;
+}
+
+
+.repair-card h3 {
+
+    color: var(--dark);
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+
+.repair-card p {
+
+    color: var(--text-light);
+
+    font-size: 9px;
+}
+
+
+.repair-id {
+
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.repair-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.detail-item span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 8px;
+
+    margin-bottom: 4px;
+}
+
+
+.detail-item strong {
+
+    color: var(--dark);
+
+    font-size: 10px;
+}
+
+
+.empty-state {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: white;
+
+    border:
+        1px dashed var(--border);
+
+    border-radius: 15px;
+}
+
+
+.empty-state i {
+
+    color: #94a3b8;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+.empty-state h3 {
+
+    color: var(--dark);
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.empty-state p {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .repairs-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .dashboard-header {
+
+        align-items: start;
+
+        flex-direction: column;
+    }
+
+
+    .active-repair-card {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .repair-status {
+
+        text-align: left;
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}

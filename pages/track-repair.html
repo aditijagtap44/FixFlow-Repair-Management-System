@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Repair | FixFlow</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/tracking.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </span>
+
+                Fix<span>Flow</span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../index.html#services">
+                    Services
+                </a>
+
+                <a href="../index.html#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a href="#" class="login-btn">
+                    Login
+                </a>
+
+                <a href="book-repair.html" class="nav-cta">
+    Book Repair
+</a>
+            </div>
+
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="tracking-hero">
+
+        <div class="container">
+
+            <div class="tracking-heading">
+
+                <span class="section-tag">
+                    REPAIR TRACKING
+                </span>
+
+                <h1>
+                    Know exactly where
+                    <span>your repair stands.</span>
+                </h1>
+
+                <p>
+                    Enter your Repair ID to get the latest
+                    status and progress of your device.
+                </p>
+
+            </div>
+
+
+            <!-- ================= SEARCH ================= -->
+
+            <div class="tracking-search">
+
+                <div class="search-input-wrapper">
+
+                    <i class="fa-solid fa-hashtag"></i>
+
+                    <input
+                        type="text"
+                        id="repairIdInput"
+                        placeholder="Enter Repair ID e.g. FF-1024"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <button
+                    id="trackButton"
+                    class="track-button"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Track Repair
+
+                </button>
+
+            </div>
+
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+            <div class="demo-hint">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Try:
+                <strong>FF-1024</strong>
+                or
+                <strong>FF-1025</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESULT ================= -->
+
+    <section
+        class="tracking-result-section"
+        id="trackingResult"
+    >
+
+        <div class="container">
+
+            <div class="repair-result-card">
+
+
+                <!-- RESULT HEADER -->
+
+                <div class="result-header">
+
+                    <div>
+
+                        <span class="result-label">
+                            REPAIR ID
+                        </span>
+
+                        <h2 id="resultRepairId">
+                            FF-1024
+                        </h2>
+
+                    </div>
+
+
+                    <span
+                        id="resultStatus"
+                        class="result-status"
+                    >
+                        <span></span>
+                        Repair In Progress
+                    </span>
+
+                </div>
+
+
+                <!-- DEVICE -->
+
+                <div class="result-device">
+
+                    <div class="result-device-icon">
+
+                        <i
+                            id="deviceIcon"
+                            class="fa-solid fa-laptop"
+                        ></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3 id="deviceName">
+                            Dell Inspiron Laptop
+                        </h3>
+
+                        <p id="repairType">
+                            Screen replacement
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESS -->
+
+                <div class="repair-progress">
+
+                    <div class="progress-heading">
+
+                        <span>
+                            Repair Progress
+                        </span>
+
+                        <strong id="progressText">
+                            68%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="large-progress-bar">
+
+                        <div
+                            id="progressFill"
+                            class="large-progress-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DETAILS -->
+
+                <div class="repair-details">
+
+                    <div class="detail-box">
+
+                        <span>
+                            Estimated Cost
+                        </span>
+
+                        <strong id="repairCost">
+                            ₹5,300
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Expected Completion
+                        </span>
+
+                        <strong id="completionDate">
+                            17 Aug 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-box">
+
+                        <span>
+                            Technician
+                        </span>
+
+                        <strong id="technicianName">
+                            Rahul Patil
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMELINE -->
+
+                <div class="result-timeline">
+
+                    <h3>
+                        Repair Timeline
+                    </h3>
+
+
+                    <div id="timelineContainer">
+
+                        <!-- JavaScript will create timeline -->
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 FixFlow. All rights reserved.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/tracking.js"></script>
+
+</body>
+
+</html>

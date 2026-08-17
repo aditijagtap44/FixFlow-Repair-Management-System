@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | FixFlow</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/dashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a
+            href="../index.html"
+            class="logo"
+        >
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+
+            Fix<span>Flow</span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="book-repair.html">
+                Book Repair
+            </a>
+
+            <a href="track-repair.html">
+                Track Repair
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                Dashboard
+            </a>
+
+        </nav>
+
+
+        <a
+            href="book-repair.html"
+            class="nav-cta"
+        >
+            <i class="fa-solid fa-plus"></i>
+            New Repair
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<main class="dashboard-page">
+
+    <div class="container">
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <span class="section-tag">
+                    CUSTOMER DASHBOARD
+                </span>
+
+                <h1>
+                    Welcome back,
+                    <span id="customerName">
+                        Customer
+                    </span>
+                </h1>
+
+                <p>
+                    Manage your repairs and track
+                    your service requests from one place.
+                </p>
+
+            </div>
+
+
+            <a
+                href="book-repair.html"
+                class="dashboard-book-btn"
+            >
+
+                <i class="fa-solid fa-plus"></i>
+
+                Book New Repair
+
+            </a>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Repairs
+                    </span>
+
+                    <strong id="totalRepairs">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+
+                    <i class="fa-solid fa-spinner"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Active Repairs
+                    </span>
+
+                    <strong id="activeRepairs">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Completed
+                    </span>
+
+                    <strong id="completedRepairs">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Upcoming
+                    </span>
+
+                    <strong id="upcomingRepairs">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACTIVE REPAIR ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Active Repair
+                    </h2>
+
+                    <p>
+                        Your currently active service request
+                    </p>
+
+                </div>
+
+                <a href="track-repair.html">
+                    View Tracking
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div
+                id="activeRepairContainer"
+                class="active-repair-container"
+            >
+
+                <!-- JavaScript will insert repair -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MY REPAIRS ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        My Repairs
+                    </h2>
+
+                    <p>
+                        Your recent repair requests
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="repairsContainer"
+                class="repairs-container"
+            >
+
+                <!-- JavaScript will insert repairs -->
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 FixFlow. All rights reserved.
+        </p>
+
+        <div class="social-links">
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
